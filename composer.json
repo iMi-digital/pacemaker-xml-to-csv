@@ -1,0 +1,20 @@
+{
+    "name": "imi/pacemaker-xml-to-csv",
+    "description": "Lets you use XML files which are transformed by your XSLT files to CSV with the Pacemaker Magento 2 import framework",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alexander Menk",
+            "email": "a.menk@imi.de"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "IMI\\PacemakerImport\\Converter\\Xml\\": [
+                "src/",
+                "symfony/"
+            ]
+        }
+    }
+}
