@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="import.plugin.xml.transform" class="IMI\PacemakerImport\Converter\Xml\Plugins\Transform">
+            <argument type="service" id="import_app_simple.simple"/>
+            <argument type="service" id="import.subject.file.writer.factory"/>
+            <argument type="service" id="import.adapter.export.csv"/>
+        </service>
+    </services>
+
+</container>
